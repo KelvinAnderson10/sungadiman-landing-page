@@ -37,8 +37,7 @@ img {
 
 .App {
   min-height: 100vh;
-  width: 80vw;
-  max-width: 1900px;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
@@ -84,7 +83,7 @@ nav {
   bottom: -5px;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 1.5px;
   background: var(--secondary-1);
   transition: width .4s;
 }
@@ -116,12 +115,13 @@ nav {
 
 .sekilas-container{
   margin: 0 auto;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 60px 0px 60px 0px;
+  padding: 100px 0px 60px 0px;
 }
 
 .sekilas-left {
@@ -163,7 +163,7 @@ nav {
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  padding: 60px 0px 60px 0px;
+  padding: 0px 0px 60px 0px;
 }
 
 .sejarah-container p:nth-child(1){
@@ -199,6 +199,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   gap: 22px;
+  flex-wrap: wrap;
 }
 
 .timeline-card {
@@ -236,5 +237,20 @@ nav {
   nav {
     padding: 0px 50px 0px 50px;
   }
-  
+
+  .sekilas-container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .sekilas-right {
+    width: 100%;
+    height: max-content;
+  }
+
+  .timeline {
+    display: none;
+  }
+
+
 }
