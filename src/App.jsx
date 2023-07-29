@@ -1,15 +1,15 @@
 import './App.css'
-import Home from './Components/Home'
-import About from './Components/About'
-import Contact from './Components/Contact'
+import Sejarah from './Components/Sejarah'
+import Beranda from './Components/Beranda'
+import Navbar from './Components/Navbar'
 
 function App() {
 
   return (
     <div className='App'>
-      <Home/>
-      <About/>
-      <Contact/>
+      <Navbar/>
+      <Beranda/>
+      <Sejarah/>
     </div>
   )
 }
