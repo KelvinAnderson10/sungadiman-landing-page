@@ -246,7 +246,7 @@ nav {
 .timeline-card {
   border-radius: 4px;
   background: var(--background-body-background);
-  background-color: #e9f4ff;
+  background-color: #eaeff4;
   padding: 24px;
   flex-direction: column;
   justify-content: center;
