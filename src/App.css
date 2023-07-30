@@ -3,6 +3,7 @@
   margin: 0 auto;
   font-family: "DM Sans" !important;
   font-feature-settings: 'clig' off, 'liga' off;
+  overflow-x: hidden;
   --secondary-1: #222325;
   --secondary-2: #484848;
   --action-active:rgba(58, 53, 65, 0.54);
@@ -45,7 +46,7 @@ img {
 nav {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   min-height: 88px;
   top: 0;
   left: 0;
@@ -121,7 +122,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 100px 0px 60px 0px;
+  padding: 60px 0px 60px 0px;
 }
 
 .sekilas-left {
