@@ -4,15 +4,15 @@ const MisiVisi = () => {
     return (
         <section id="misi-visi" className="misi-visi">
             <div className="misi-container">
-                <p>Misi Kami</p>
-                <p>
+                <p data-aos="fade-up">Misi Kami</p>
+                <p data-aos="fade-up" data-aos-delay="300">
                     "Menjadi Perusahaan distributor utama penyedia produk alat kesehatan
                     bagi seluruh masyarakat di Indonesia."
                 </p>
             </div>
             <div className="visi-container">
-                <p className="visi-heading">Visi Kami</p>
-                <div className="visi-card-container">
+                <p data-aos="fade-up" className="visi-heading">Visi Kami</p>
+                <div data-aos="zoom-in-up" data-aos-duration="1500" className="visi-card-container">
                     <div className="visi-card">
                         <div className="visi-icon">
                             <svg
