@@ -5,6 +5,7 @@ import './App.css'
 import Sejarah from './Components/Sejarah'
 import Beranda from './Components/Beranda'
 import Navbar from './Components/Navbar'
+import MisiVisi from "./Components/MisiVisi";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <Beranda/>
       <Sejarah/>
+      <MisiVisi/>
     </div>
   )
 }
