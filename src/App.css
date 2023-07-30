@@ -47,19 +47,37 @@ img {
 /* Navbar */
 nav {
   display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 88px;
   top: 0;
   left: 0;
-  padding: 0px 10% 0px 10%;
   z-index: 9999;
   position: fixed;
   width: 100%;
   height: auto;
-  gap: 150px;
-  background-color: #fff;
   /* box-shadow: 0 0 10px rgba(0,0,0,.09); */
+  flex-direction: column;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  min-height: 88px;
+  padding: 0px 10% 0px 10%;
+  background: #fff;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #b8f5ee;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #00ccb6;
+  width: 0%;
 }
 
 .nav-logo-container {
@@ -361,10 +379,6 @@ nav {
 @media (max-width: 800px) {
   .navbar-links-container {
     display: none;
-  }
-
-  nav {
-    padding: 0px 50px 0px 50px;
   }
 
   .sekilas-container {
