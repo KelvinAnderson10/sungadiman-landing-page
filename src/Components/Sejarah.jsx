@@ -21,7 +21,7 @@ const Sejarah = () => {
                     </p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" className="sekilas-right">
-                    <img src="/sekilas-dokter.png"></img>
+                    <img alt="sekilas-dokter.png" src="/sekilas-dokter.png"></img>
                 </div>
             </div>
             <div className="sejarah-container">
