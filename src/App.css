@@ -131,6 +131,8 @@ nav {
   justify-content: center;
 }
 
+
+/* Sejarah */
 .sejarah {
   margin: 0 auto;
   min-height: 100vh;
@@ -254,6 +256,8 @@ nav {
   line-height: 24px;
 }
 
+
+/* Misi Visi */
 .misi-visi {
   min-height: 100vh;
   display: flex;
