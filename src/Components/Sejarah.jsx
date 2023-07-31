@@ -29,19 +29,19 @@ const Sejarah = () => {
                 <div data-aos="zoom-in" className="timeline">
                     <div className="timeline-line"></div>
                     <div className="timeline-dot-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <svg data-aos="zoom-in" data-aos-delay="200" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <ellipse cx="12.8289" cy="13" rx="12.8289" ry="13" fill="#D5E8F1" />
                                 <ellipse cx="12.8289" cy="13" rx="6.90786" ry="7" fill="#2D8BBA" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <svg data-aos="zoom-in" data-aos-delay="400" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <ellipse cx="12.8289" cy="13" rx="12.8289" ry="13" fill="#D5E8F1" />
                                 <ellipse cx="12.8289" cy="13" rx="6.90786" ry="7" fill="#2D8BBA" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <svg data-aos="zoom-in" data-aos-delay="600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <ellipse cx="12.8289" cy="13" rx="12.8289" ry="13" fill="#D5E8F1" />
                                 <ellipse cx="12.8289" cy="13" rx="6.90786" ry="7" fill="#2D8BBA" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                            <svg data-aos="zoom-in" data-aos-delay="800" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <ellipse cx="12.8289" cy="13" rx="12.8289" ry="13" fill="#D5E8F1" />
                                 <ellipse cx="12.8289" cy="13" rx="6.90786" ry="7" fill="#2D8BBA" />
                             </svg>

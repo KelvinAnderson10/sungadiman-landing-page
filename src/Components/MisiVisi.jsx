@@ -12,9 +12,9 @@ const MisiVisi = () => {
             </div>
             <div className="visi-container">
                 <p data-aos="fade-up" className="visi-heading">Visi Kami</p>
-                <div data-aos="zoom-in-up" data-aos-duration="1500" className="visi-card-container">
-                    <div className="visi-card">
-                        <div className="visi-icon">
+                <div className="visi-card-container">
+                    <div data-aos="zoom-in" data-aos-duration="1200" className="visi-card">
+                        <div data-aos="zoom-in-down" data-aos-duration="1200" className="visi-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"
@@ -34,8 +34,8 @@ const MisiVisi = () => {
                             padaketersediaan, variasi & kualitas produk.
                         </p>
                     </div>
-                    <div className="visi-card">
-                        <div className="visi-icon">
+                    <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200" className="visi-card">
+                        <div data-aos="zoom-in-down" data-aos-duration="1200" data-aos-delay="200" className="visi-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"
@@ -56,8 +56,8 @@ const MisiVisi = () => {
                             zaman.
                         </p>
                     </div>
-                    <div className="visi-card">
-                    <div className="visi-icon">
+                    <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400" className="visi-card">
+                    <div data-aos="zoom-in-down" data-aos-duration="1200" data-aos-delay="400" className="visi-icon">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"

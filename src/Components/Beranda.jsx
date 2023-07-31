@@ -5,9 +5,7 @@ const Beranda = () => {
     return (
         <div>
             <section id='beranda' className='beranda'>
-                <div className='beranda-content'>
-                    Beranda
-                </div>
+                <img src='/mask.svg'></img>
             </section>
         </div>
     )
