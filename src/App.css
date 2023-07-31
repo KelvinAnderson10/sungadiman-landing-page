@@ -84,19 +84,18 @@ nav {
 .progress-container {
   width: 100%;
   height: 4px;
-  background: #b8f5ee;
+  background: rgba(108, 152, 227, 0.19);
 }
 
 .progress-bar {
   height: 4px;
-  background: #00ccb6;
+  background: #2F5F98;
   width: 0%;
 }
 
 .nav-logo-container {
-  width: 231px;
-  height: 48px;
-  background: #D9D9D9;
+  width: 89px;
+  height: 60px;
 }
 
 .navbar-links-container a {
@@ -396,6 +395,15 @@ nav {
 @media (max-width: 800px) {
   .navbar-links-container {
     display: none;
+  }
+
+  .nav-container {
+    min-height: 60px;
+  }
+
+  .nav-logo-container {
+    width: 60px;
+    height: 40px;
   }
 
   .sekilas-container {

@@ -19,7 +19,9 @@ const Navbar = () => {
     return (
         <nav>
             <div className="nav-container">
-                <div className="nav-logo-container"></div>
+                <div className="nav-logo-container">
+                    <img alt="logo.png" src="/logo.png"></img>
+                </div>
                 <div className="navbar-links-container">
                     <a href="#beranda">Beranda</a>
                     <a href="#sejarah">Sejarah</a>
