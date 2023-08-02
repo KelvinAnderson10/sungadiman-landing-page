@@ -11,10 +11,20 @@ const MisiVisi = () => {
                 </p>
             </div>
             <div className="visi-container">
-                <p data-aos="fade-up" className="visi-heading">Visi Kami</p>
+                <p data-aos="fade-up" className="visi-heading">
+                    Visi Kami
+                </p>
                 <div className="visi-card-container">
-                    <div data-aos="zoom-in" data-aos-duration="1200" className="visi-card">
-                        <div data-aos="zoom-in-down" data-aos-duration="1200" className="visi-icon">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1200"
+                        className="visi-card"
+                    >
+                        <div
+                            data-aos="zoom-in-down"
+                            data-aos-duration="1200"
+                            className="visi-icon"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"
@@ -34,8 +44,18 @@ const MisiVisi = () => {
                             padaketersediaan, variasi & kualitas produk.
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200" className="visi-card">
-                        <div data-aos="zoom-in-down" data-aos-duration="1200" data-aos-delay="200" className="visi-icon">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1200"
+                        data-aos-delay="200"
+                        className="visi-card"
+                    >
+                        <div
+                            data-aos="zoom-in-down"
+                            data-aos-duration="1200"
+                            data-aos-delay="200"
+                            className="visi-icon"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"
@@ -56,8 +76,18 @@ const MisiVisi = () => {
                             zaman.
                         </p>
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="400" className="visi-card">
-                    <div data-aos="zoom-in-down" data-aos-duration="1200" data-aos-delay="400" className="visi-icon">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1200"
+                        data-aos-delay="400"
+                        className="visi-card"
+                    >
+                        <div
+                            data-aos="zoom-in-down"
+                            data-aos-duration="1200"
+                            data-aos-delay="400"
+                            className="visi-icon"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="28"
