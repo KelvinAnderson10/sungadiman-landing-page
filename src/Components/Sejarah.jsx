@@ -8,13 +8,13 @@ const Sejarah = () => {
                     <p data-aos="fade-right">Sekilas</p>
                     <p data-aos="fade-right" data-aos-delay="200">
                         "PT Sungadiman Makmur Sentosa merupakan perusahaan yang
-                        berpengalaman selama belasan tahun dalam bidang distrubusi alat
+                        berpengalaman selama belasan tahun dalam bidang distribusi alat
                         kesehatan sebagai distributor resmi berbagai brand alat kesehatan
                         dan unggul dalam kualitas jasa pelayanan. "
                     </p>
                     <p data-aos="fade-right" data-aos-delay="400">
-                        PT Sungadiman Makmur Sentosa berpergang teguh pada prinsip usaha
-                        peningkatan kesehatan masyarakat melaui jasa pelayanan dengan
+                        PT Sungadiman Makmur Sentosa berpegang teguh pada prinsip usaha
+                        peningkatan kesehatan masyarakat melalui jasa pelayanan dengan
                         menjunjung tinggi kualitas produk yang di jual dan menjalin
                         kemitraan dengan perusahaan produksi alat kesehatan kelas nasional
                         yang memiliki reputasi dikancah internasional.
