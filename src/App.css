@@ -86,12 +86,12 @@ nav {
 .progress-container {
   width: 100%;
   height: 4px;
-  background: #b8f7f8;
+  background: 	#D3D3D3;
 }
 
 .progress-bar {
   height: 4px;
-  background: #00d6da;
+  background: #41B8D5;
   width: 0%;
 }
 
