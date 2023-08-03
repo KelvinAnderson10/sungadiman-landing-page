@@ -1,0 +1,52 @@
+.penghargaan{
+    margin: 0 auto;
+    max-height: max-content;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.penghargaan-container{
+    width: 100%;
+    height: 55vh;
+    margin-top: 5vh;
+    gap: 100px;
+}
+
+.penghargaan-title-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-penghargaan{
+    max-width: 250px !important;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px 0px rgba(58, 53, 65, 0.10);
+    background-color: rgba(255, 255, 255, 1);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tropy-container{
+    width: 175px;
+}
+
+.title-penghargaan{
+    color: var(--secondary-2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.font-from-penghargaan{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--action-active);
+    line-height: 24px;
+}
