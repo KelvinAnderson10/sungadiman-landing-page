@@ -35,47 +35,37 @@ const Penghargaan = () => {
     ]
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
-        speed: 500,
-        slidesToShow: 4,
+        speed: 1000,
+        slidesToShow: 3,
+        autoplay: true,
         slidesToScroll: 3,
-        nextArrow: <img src="\next.svg"></img>,
-        prevArrow: <img src="\prev.svg"></img>,
+        autoplaySpeed: 4000,
+        nextArrow: (
+            <div >
+            <img className="arrows" src="/next.svg"></img>
+            </div>
+        ),
+        prevArrow: (<img className="arrows" src="/prev.svg"></img>),
         responsive: [
             {
-              breakpoint: 1050,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 960,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 625,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 800,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-          ]
-      };
+        ]
+    };
 
     return (
         <section id='penghargaan' className="penghargaan">
-            <div className="penghargaan-title-container">
+            <div data-aos="fade-up" data-aos-duration="1200" className="penghargaan-title-container">
                 <span className="visi-heading">Penghargaan</span>
             </div>
-            <div className="penghargaan-container">
+            <div  data-aos="zoom-in" data-aos-duration="1500" className="penghargaan-container">
                 <Slider {...settings}>
                     {dataPenghargaan.map((item, index) => (
                         <div className="box-penghargaan" key={index}>

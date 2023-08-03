@@ -1,9 +1,10 @@
 .nilai-perusahaan {
     margin: 0 auto;
-    max-height: max-content;
+    height: max-content;
     max-width: 80vw;
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
 .font-nilai-perusahaan{
@@ -11,25 +12,28 @@
     font-weight: 700;
     color: var(--action-active);
     line-height: 24px;
+    padding-bottom: 30px;
 }
 
 .nilai-perusahaan-container{
+    /* background-color: black; */
+    padding-top: 120px;
     margin: 0 auto;
-    min-height: 30vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 
 .nilai-perusahaan-left{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    min-height: 40vh;
-    width: 50%;
+    /* justify-content: space-between; */
+    max-width: 600px;
+    padding-top: 40px;
 }
 
 .nilai-perusahaan-right{
@@ -37,8 +41,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 40vh;
-  width: 50%;
+  height: 288px;
   transition: opacity 0.5s, transform 0.5s;
 }
 
@@ -52,20 +55,24 @@
 
 .content-nilai{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 17vh;
+    gap: 16px;
+    min-height: 200px;
     transition: opacity 0.5s, transform 0.5s;
+    flex: 1;
+    padding-bottom: 80px;
 }
 
 .nilai-perusahaan-bottom{
+    display: block;
     width: 100%;
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+
 } 
 
 .indicator {
@@ -130,4 +137,43 @@
 .slide-out {
   opacity: 0;
   transform: translateX(50px);
+}
+
+.arrow-container {
+  display: flex;
+  gap: 60px;
+}
+
+@media (max-width: 800px) {
+  .nilai-perusahaan-container{
+    padding-top: 0px;
+  }
+  .arrow-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .content-nilai{
+    padding-bottom: 10px;
+    min-height: 180px;
+  }
+
+  .nilai-perusahaan-bottom{
+    display: none;
+  }
+
+  .font-nilai-perusahaan{
+    padding-bottom: 10px;
+  }
+
+  .nilai-perusahaan-right{
+    max-width: 432px;
+    margin: 0 auto;
+    margin-top: 10px !important;
+  }
+
+  .nilai-perusahaan {
+    padding-bottom: 30px;
+  }
+  
 }

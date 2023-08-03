@@ -1,16 +1,35 @@
 .penghargaan{
     margin: 0 auto;
-    max-height: max-content;
     max-width: 80vw;
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "" !important;
+}
+
+.slick-next {
+    width: 100px !important;
+    height: 100px !important;
+    right: -5vw !important;
+}
+
+.slick-prev {
+    width: 100px !important;
+    height: 100px !important;
+    left: -5vw !important;
+    z-index: 9999 !important;
 }
 
 .penghargaan-container{
+    margin: 0 auto;
     width: 100%;
-    height: 55vh;
-    margin-top: 5vh;
+    height: 60vh;
     gap: 100px;
 }
 
@@ -18,14 +37,18 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    /* padding-top: 60px; */
+    padding-bottom: 60px;
+
 }
 
 .box-penghargaan{
-    max-width: 250px !important;
-    height: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 2px 10px 0px rgba(58, 53, 65, 0.10);
-    background-color: rgba(255, 255, 255, 1);
+    padding: 60px 24px 60px 24px;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: max-content !important;
+    border: 1px solid var(--light-other-divider, rgba(58, 53, 65, 0.12));
+    background: var(--light-background-paper, #FFF);
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -33,7 +56,13 @@
 }
 
 .tropy-container{
-    width: 175px;
+    width: 120.069px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.slick-dots {
+    bottom: -50px !important;
 }
 
 .title-penghargaan{

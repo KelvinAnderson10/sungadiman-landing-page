@@ -420,7 +420,7 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 90px 0px 60px 0px;
+  padding: 90px 0px 90px 0px;
   gap: 40px;
 }
 
