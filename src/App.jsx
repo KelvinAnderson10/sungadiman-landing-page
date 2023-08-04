@@ -6,6 +6,8 @@ import Sejarah from './Components/Sejarah'
 import Beranda from './Components/Beranda'
 import Navbar from './Components/Navbar'
 import MisiVisi from "./Components/MisiVisi";
+import Partner from "./Components/Partner";
+import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -18,6 +20,8 @@ function App() {
       <Beranda/>
       <Sejarah/>
       <MisiVisi/>
+      <Partner/>
+      <Footer/>
     </div>
   )
 }
