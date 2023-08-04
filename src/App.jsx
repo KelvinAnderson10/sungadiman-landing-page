@@ -22,10 +22,10 @@ function App() {
       <Beranda/>
       <Sejarah/>
       <MisiVisi/>
-      <Partner/>
-      <Footer/>
       <NilaiPerusahaan/>
       <Penghargaan/>
+      <Partner/>
+      <Footer/>
     </div>
   )
 }
