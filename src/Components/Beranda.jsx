@@ -38,7 +38,7 @@ const Beranda = () => {
                         <path d="M84 42C84 65.1959 65.196 84 42 84C18.804 84 0 65.1959 0 42C0 42 0 42 42 42C84 42 84 42 84 42Z" fill="#FFB400" />
                         <circle cx="21" cy="20" r="20" fill="#FF6166" />
                         <circle cx="63" cy="20" r="20" fill="#56CA00" />
-                        <circle cx="63" cy="20" r="20" fill="black" fill-opacity="0.1" />
+                        <circle cx="63" cy="20" r="20" fill="black" fillOpacity="0.1" />
                     </svg>
                     <div className="beranda-info-left-text">
                         <p>Customer</p>
