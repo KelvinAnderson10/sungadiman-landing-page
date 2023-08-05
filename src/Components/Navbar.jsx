@@ -131,22 +131,22 @@ const Navbar = () => {
                 direction="top"
             >
                 <a href="#beranda" onClick={handleShowMenu}>
-                    Beranda
+                    {t('navbar1')}
                 </a>
                 <a href="#sejarah" onClick={handleShowMenu}>
-                    Sejarah
+                    {t('navbar2')}
                 </a>
                 <a href="#misi-visi" onClick={handleShowMenu}>
-                    Misi & Visi
+                    {t('navbar3')}
                 </a>
                 <a href="#nilai-perusahaan" onClick={handleShowMenu}>
-                    Nilai Perusahaan
+                    {t('navbar4')}
                 </a>
                 <a href="#penghargaan" onClick={handleShowMenu}>
-                    Penghargaan
+                    {t('navbar5')}
                 </a>
                 <a href="#partner" onClick={handleShowMenu}>
-                    Partner
+                    {t('navbar6')}
                 </a>
             </Drawer>
         </nav>
