@@ -1,21 +1,18 @@
+import { useTranslation } from "react-i18next";
+
 const Sejarah = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <section id="sejarah" className="sejarah">
             <div className="sekilas-container">
                 <div className="sekilas-left">
-                    <p data-aos="fade-right">Sekilas</p>
+                    <p data-aos="fade-right">{t('sekilasTitle')}</p>
                     <p data-aos="fade-right" data-aos-delay="200">
-                        "PT Sungadiman Makmur Sentosa merupakan perusahaan yang
-                        berpengalaman selama belasan tahun dalam bidang distribusi alat
-                        kesehatan sebagai distributor resmi berbagai brand alat kesehatan
-                        dan unggul dalam kualitas jasa pelayanan. "
+                    {t('sekilas1')}
                     </p>
                     <p data-aos="fade-right" data-aos-delay="400">
-                        PT Sungadiman Makmur Sentosa berpegang teguh pada prinsip usaha
-                        peningkatan kesehatan masyarakat melalui jasa pelayanan dengan
-                        menjunjung tinggi kualitas produk yang di jual dan menjalin
-                        kemitraan dengan perusahaan produksi alat kesehatan kelas nasional
-                        yang memiliki reputasi dikancah internasional.
+                    {t('sekilas2')}
                     </p>
                 </div>
                 <div
@@ -28,7 +25,7 @@ const Sejarah = () => {
                 </div>
             </div>
             <div className="sejarah-container">
-                <p data-aos="fade-up">Sejarah PT. Sungadiman Makmur Sentosa</p>
+                <p data-aos="fade-up">{t('sejarahTitle')}</p>
                 <div className="timeline">
                     <div data-aos="zoom-in" className="timeline-line"></div>
                     <div className="timeline-dot-container">
@@ -138,8 +135,7 @@ const Sejarah = () => {
                     >
                         <p>2008</p>
                         <p>
-                            Berawal dari toko retail alat kesehatan yang dijalankan dengan
-                            partner bisnis.
+                        {t('sejarah1')}
                         </p>
                     </div>
                     <div
@@ -149,7 +145,7 @@ const Sejarah = () => {
                     >
                         <p>2010</p>
                         <p>
-                            Memutuskan untuk menjadi toko retail alat kesehatan yang mandiri.
+                        {t('sejarah2')}
                         </p>
                     </div>
                     <div
@@ -158,7 +154,7 @@ const Sejarah = () => {
                         data-aos-delay="600"
                     >
                         <p>2016</p>
-                        <p>Beralih menjadi distributor alat kesehatan.</p>
+                        <p>{t('sejarah3')}</p>
                     </div>
                     <div
                         className="timeline-card"
@@ -166,7 +162,7 @@ const Sejarah = () => {
                         data-aos-delay="800"
                     >
                         <p>2022</p>
-                        <p>Menjadi distributor dengan standar Sertifikasi CDAKB.</p>
+                        <p>{t('sejarah4')}</p>
                     </div>
                 </div>
             </div>

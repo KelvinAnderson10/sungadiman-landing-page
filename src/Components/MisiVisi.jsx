@@ -1,18 +1,20 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const MisiVisi = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <section id="misi-visi" className="misi-visi">
             <div className="misi-container">
-                <p data-aos="fade-up">Misi Kami</p>
+                <p data-aos="fade-up">{t('misiTitle')}</p>
                 <p data-aos="fade-up" data-aos-delay="300">
-                    "Menjadi Perusahaan distributor utama penyedia produk alat kesehatan
-                    bagi seluruh masyarakat di Indonesia."
+                {t('misiDesc')}
                 </p>
             </div>
             <div className="visi-container">
                 <p data-aos="fade-up" className="visi-heading">
-                    Visi Kami
+                {t('visiTitle')}
                 </p>
                 <div className="visi-card-container">
                     <div
@@ -38,10 +40,9 @@ const MisiVisi = () => {
                                 />
                             </svg>
                         </div>
-                        <p className="visi-title">Kepuasan Konsumen</p>
+                        <p className="visi-title">{t('visi1')}</p>
                         <p className="visi-text">
-                            Memberikan kepuasan kepada konsumen dengan terfokus
-                            padaketersediaan, variasi & kualitas produk.
+                        {t('visi1Desc')}
                         </p>
                     </div>
                     <div
@@ -69,11 +70,9 @@ const MisiVisi = () => {
                                 />
                             </svg>
                         </div>
-                        <p className="visi-title">Pelayanan Berkualitas</p>
+                        <p className="visi-title">{t('visi2')}</p>
                         <p className="visi-text">
-                            Memberikan pelayanan yang berkualitas dengan senantiasa
-                            meningkatkan kemampuan sumber daya manusia seiring perkembangan
-                            zaman.
+                        {t('visi2Desc')}
                         </p>
                     </div>
                     <div
@@ -106,10 +105,9 @@ const MisiVisi = () => {
                                 />
                             </svg>
                         </div>
-                        <p className="visi-title">Sistemisasi Efektif</p>
+                        <p className="visi-title">{t('visi3')}</p>
                         <p className="visi-text">
-                            Sistemisasi yang efektif, efisien, nyaman dan terintegrasi baik
-                            secara offline maupun online.
+                        {t('visi3Desc')}
                         </p>
                     </div>
                 </div>

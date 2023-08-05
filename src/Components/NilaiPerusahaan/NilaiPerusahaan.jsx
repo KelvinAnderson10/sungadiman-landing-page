@@ -1,42 +1,44 @@
 import React, { useState } from "react";
 import './NilaiPerusahaan.css';
+import { useTranslation } from "react-i18next";
 
 const NilaiPerusahaan = () => {
+    const { t, i18n } = useTranslation();
     const arrayNilai = [
         {
             "no": "1. ",
-            "title": "Inovatif",
-            "description": "Senantiasa memunculkan sesuatu IDE yang baru agar perusahaan terus bertumbuh.",
+            "title": t('nilaiTitle1'),
+            "description": t('nilaiDesc1'),
             "img_path": "\inovatif.svg"
         },
         {
             "no": "2. ",
-            "title": "Kolaboratif",
-            "description": "Membangun kerjasama yang sinergis antara satu dengan lainya untuk menciptakan team yang solid.",
+            "title": t('nilaiTitle2'),
+            "description": t('nilaiDesc2'),
             "img_path": "\kolaboratif.svg"
         },
         {
             "no": "3. ",
-            "title": "Harmonis",
-            "description": "Saling peduli dan menghargai dalam membangun lingkungan kerja yang kondusif.",
+            "title": t('nilaiTitle3'),
+            "description": t('nilaiDesc3'),
             "img_path": "\harmonis.svg"
         },
         {
             "no": "4. ",
-            "title": "Loyalitas",
-            "description": "Berdedikasi dan mengutamakan kepentingan bersama dan rela berkorban untuk mencapai tujuan yang lebih besar.",
+            "title": t('nilaiTitle4'),
+            "description": t('nilaiDesc4'),
             "img_path": "\loyalitas.svg"
         },
         {
             "no": "5. ",
-            "title": "Amanah",
-            "description": "Memegang teguh kepercayaan yang diberikan serta bertanggung jawab memenuhi janji dan komitmen.",
+            "title": t('nilaiTitle5'),
+            "description": t('nilaiDesc5'),
             "img_path": "\amanah.svg"
         },
         {
             "no": "6. ",
-            "title": "Solutif",
-            "description": "Senantiasa memberikan solusi dan  masukan atas permasalahan permasalahan yang ada disetiap team, supaya segera terselesaikan.",
+            "title": t('nilaiTitle6'),
+            "description": t('nilaiDesc6'),
             "img_path": "\solutif.svg"
         },
     ]
@@ -75,7 +77,7 @@ const NilaiPerusahaan = () => {
         <section id="nilai-perusahaan" className="nilai-perusahaan">
             <div className="nilai-perusahaan-container">
                 <div className="nilai-perusahaan-left">
-                    <p data-aos="fade-right" className="font-nilai-perusahaan">Nilai Perusahaan</p>
+                    <p data-aos="fade-right" className="font-nilai-perusahaan">{t('nilaiTitle')}</p>
                     <div className={`content-nilai ${slideIn ? "slide-in" : slideOut ? "slide-out" : ""}`}>
                         <p data-aos="fade-right" data-aos-delay="200" className="title-nilai">
                             {arrayNilai[currentArray].title}
@@ -95,7 +97,7 @@ const NilaiPerusahaan = () => {
                 </div>
                 <div className={`nilai-perusahaan-right ${slideIn ? "slide-in" : slideOut ? "slide-out" : ""}`}>
                     <div data-aos="fade-right" data-aos-duration="1200">
-                        <img src={arrayNilai[currentArray].img_path} title="https://storyset.com/work"></img>
+                        <img alt="storyset-img" src={arrayNilai[currentArray].img_path} title="https://storyset.com/work"></img>
                     </div>
                 </div>
             </div>

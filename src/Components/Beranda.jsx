@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Beranda = () => {
     const moveToBottom = () => {
         const screenHeight = window.innerHeight;
         window.scrollTo(0, screenHeight - (screenHeight * 0.09));
     }
+    const { t, i18n } = useTranslation();
     return (
         <section id="beranda" className="beranda">
             <div className="beranda-section">
@@ -18,10 +20,9 @@ const Beranda = () => {
                             data-aos-duration="1000"
                             data-aos-delay="200"
                         >
-                            Distributor resmi berbagai brand alat kesehatan dan unggul dalam
-                            kualitas jasa pelayanan.
+                            {t('berandaDesc')}
                         </p>
-                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" onClick={moveToBottom} className="start-btn">START</div>
+                        <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" onClick={moveToBottom} className="start-btn">{t('berandaBtn')}</div>
                     </div>
                     <div
                         data-aos="zoom-in-right"
@@ -42,7 +43,7 @@ const Beranda = () => {
                     </svg>
                     <div className="beranda-info-left-text">
                         <p>Customer</p>
-                        <p>"Kami percaya jika kepuasan Anda adalah prioritas utama kami!"</p>
+                        <p>{t('berandaQuote')}</p>
                     </div>
                 </div>
                 <div className="beranda-info-right">
@@ -52,14 +53,14 @@ const Beranda = () => {
                                 <circle cx="25" cy="25" r="25" fill="#FFB400" />
                             </svg>
                             <p className="info-number">25++</p>
-                            <p className="info-text">Dinas Kesehatan</p>
+                            <p className="info-text">{t('beranda1')}</p>
                         </div>
                         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="info-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                             <circle cx="25" cy="25" r="25" fill="#16B1FF"/>
                             </svg>
                             <p className="info-number">100++</p>
-                            <p className="info-text">Rumah Sakit</p>
+                            <p className="info-text">{t('beranda2')}</p>
                         </div>
                     </div>
                     <div className="beranda-info-right-container">
@@ -68,14 +69,14 @@ const Beranda = () => {
                             <circle cx="25" cy="25" r="25" fill="#56CA00"/>
                             </svg>
                             <p className="info-number">260++</p>
-                            <p className="info-text">Puskesmas</p>
+                            <p className="info-text">{t('beranda3')}</p>
                         </div>
                         <div  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900"  className="info-container">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                             <circle cx="25" cy="25" r="25" fill="#FF4C51"/>
                             </svg>
                             <p className="info-number">120++</p>
-                            <p className="info-text">Sekolah, Klinik, Dll</p>
+                            <p className="info-text">{t('beranda4')}</p>
                         </div>
                     </div>
                 </div>

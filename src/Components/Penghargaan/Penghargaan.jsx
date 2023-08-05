@@ -3,9 +3,10 @@ import './Penghargaan.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
 const Penghargaan = () => {
-
+    const { t, i18n } = useTranslation();
     const dataPenghargaan = [
         {
             "title": "BEST BUSINESS PARTNER 2018",
@@ -44,10 +45,10 @@ const Penghargaan = () => {
         autoplaySpeed: 4000,
         nextArrow: (
             <div >
-            <img className="arrows" src="/next.svg"></img>
+            <img alt="next.svg" className="arrows" src="/next.svg"></img>
             </div>
         ),
-        prevArrow: (<img className="arrows" src="/prev.svg"></img>),
+        prevArrow: (<img alt="prev.svg" className="arrows" src="/prev.svg"></img>),
         responsive: [
             {
                 breakpoint: 800,
@@ -63,14 +64,14 @@ const Penghargaan = () => {
     return (
         <section id='penghargaan' className="penghargaan">
             <div data-aos="fade-up" data-aos-duration="1200" className="penghargaan-title-container">
-                <span className="visi-heading">Penghargaan</span>
+                <span className="visi-heading">{t('penghargaanTitle')}</span>
             </div>
             <div  data-aos="zoom-in" data-aos-duration="1500" className="penghargaan-container">
                 <Slider {...settings}>
                     {dataPenghargaan.map((item, index) => (
                         <div className="box-penghargaan" key={index}>
                             <div className="tropy-container">
-                                <img src={item.img_path}></img>
+                                <img alt="trophy.png" src={item.img_path}></img>
                             </div>
                             <span className="title-penghargaan">{item.title}</span>
                             <span className="font-from-penghargaan">{item.from}</span>
