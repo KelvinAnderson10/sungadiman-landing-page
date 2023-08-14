@@ -59,7 +59,7 @@ const Beranda = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                             <circle cx="25" cy="25" r="25" fill="#16B1FF"/>
                             </svg>
-                            <p className="info-number">100++</p>
+                            <p className="info-number">150++</p>
                             <p className="info-text">{t('beranda2')}</p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const Beranda = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                             <circle cx="25" cy="25" r="25" fill="#56CA00"/>
                             </svg>
-                            <p className="info-number">260++</p>
+                            <p className="info-number">370++</p>
                             <p className="info-text">{t('beranda3')}</p>
                         </div>
                         <div  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900"  className="info-container">
