@@ -6,6 +6,12 @@ const MisiVisi = () => {
 
     return (
         <section id="misi-visi" className="misi-visi">
+            <div className="misi-container">
+                <p data-aos="fade-up">{t('misiTitle')}</p>
+                <p data-aos="fade-up" data-aos-delay="300">
+                {t('misiDesc')}
+                </p>
+            </div>
             <div className="visi-container">
                 <p data-aos="fade-up" className="visi-heading">
                 {t('visiTitle')}
@@ -105,12 +111,6 @@ const MisiVisi = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className="misi-container">
-                <p data-aos="fade-up">{t('misiTitle')}</p>
-                <p data-aos="fade-up" data-aos-delay="300">
-                {t('misiDesc')}
-                </p>
             </div>
         </section>
     );
