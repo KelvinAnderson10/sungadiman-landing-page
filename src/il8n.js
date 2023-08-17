@@ -35,7 +35,7 @@ i18n
             visiTitle: "Our Mission",
             visi1: "Customer Satisfaction",
             visi1Desc: "Satisfy consumers by focusing on product availability, variety and quality.",
-            visi2: "Improvement of Human Resources (HR)",
+            visi2: "Human Resources Improvement",
             visi2Desc: "Provide quality service by continuously improving the ability of human resources (HR) along with the times.",
             visi3: "Effective Systemization",
             visi3Desc: "Effective, efficient, convenient and integrated systemization with both offline and online.",
@@ -54,7 +54,9 @@ i18n
             nilaiTitle: "Company Value",
             penghargaanTitle: "Awards",
             alamat: "Address",
-            telepon: "Phone"
+            telepon: "Phone",
+            sertiTitle: "Human Resources Improvement",
+            sertiText: "Human Resources Improvement Certificates"
             }
         },
         id: {
@@ -104,7 +106,9 @@ i18n
             nilaiTitle: "Nilai Perusahaan",
             penghargaanTitle: "Penghargaan",
             alamat: "Alamat",
-            telepon: "Telepon"
+            telepon: "Telepon",
+            sertiTitle: "Peningkatan Sumber Daya Manusia",
+            sertiText: "Sertifikat Peningkatan Sumber Daya Manusia"
             },
         },
     }
