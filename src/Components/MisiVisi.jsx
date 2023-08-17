@@ -112,6 +112,20 @@ const MisiVisi = () => {
                     </div>
                 </div>
             </div>
+            <div className="sertifikat-container">
+                <p className="sertifikat-title">Peningkatan Sumber Daya Manusia</p>
+                <p className="sertifikat-text">Sertifikat Peningkatan Sumber Daya Manusia</p>
+                <div className="sertifikat-img-container">
+                    <a className="sertifikat-img" href="sertifikat-1.pdf" target="_blank"><img src="/sertifikat-1.png"></img></a>
+                    <img className="sertifikat-img" src="/sertifikat-2.png"></img>
+                    <img className="sertifikat-img" src="/sertifikat-3.png"></img>
+                    <img className="sertifikat-img" src="/sertifikat-4.png"></img>
+                    <img className="sertifikat-img" src="/sertifikat-5.png"></img>
+                    <img className="sertifikat-img" src="/sertifikat-6.png"></img>
+
+
+                </div>
+            </div>
         </section>
     );
 };
