@@ -116,12 +116,12 @@ const MisiVisi = () => {
                 <p  data-aos="fade-up" className="sertifikat-title">{t('sertiTitle')}</p>
                 <p  data-aos="fade-up" data-aos-delay="300" className="sertifikat-text">{t('sertiText')}</p>
                 <div data-aos="zoom-in" data-aos-duration="1000" className="sertifikat-img-container">
-                    <a className="sertifikat-img" href="sertifikat-1.pdf" target="_blank"><img src="/sertifikat-1.png"></img></a>
-                    <a className="sertifikat-img" href="sertifikat-2.pdf" target="_blank"><img src="/sertifikat-2.png"></img></a>
-                    <a className="sertifikat-img" href="sertifikat-3.pdf" target="_blank"><img src="/sertifikat-3.png"></img></a>
-                    <a className="sertifikat-img" href="sertifikat-4.pdf" target="_blank"><img src="/sertifikat-4.png"></img></a>
-                    <a className="sertifikat-img" href="sertifikat-5.pdf" target="_blank"><img src="/sertifikat-5.png"></img></a>
-                    <a className="sertifikat-img" href="sertifikat-6.pdf" target="_blank"><img src="/sertifikat-6.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-1.pdf" target="_blank"><img alt="sertifikat-1.png" src="/sertifikat-1.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-2.pdf" target="_blank"><img alt="sertifikat-2.png" src="/sertifikat-2.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-3.pdf" target="_blank"><img alt="sertifikat-3.png" src="/sertifikat-3.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-4.pdf" target="_blank"><img alt="sertifikat-4.png" src="/sertifikat-4.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-5.pdf" target="_blank"><img alt="sertifikat-5.png" src="/sertifikat-5.png"></img></a>
+                    <a className="sertifikat-img" href="sertifikat-6.pdf" target="_blank"><img alt="sertifikat-6.png" src="/sertifikat-6.png"></img></a>
                 </div>
             </div>
         </section>
