@@ -82,9 +82,10 @@ nav {
 
 .nav-right {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+  width: max-content;
 }
 
 .language-container {
@@ -189,7 +190,7 @@ nav {
 
 .navbar-links-container a {
   margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   text-decoration: none;
   line-height: 24px;
   color: var(--secondary-1);
@@ -693,9 +694,10 @@ nav {
   width: 100%;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
-.partner-logo img {
+.partner-logo a {
   width: auto;
   height: auto;
 }
@@ -919,4 +921,10 @@ nav {
   }
 
 
+}
+
+.img-unduh{
+  height: 2em;
+  width: 2em;
+  cursor: pointer;
 }

@@ -2,8 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import ModalGoogleForm from "./GoogleForm/ModalGoogleForm";
 
-const Navbar = () => {
+const Navbar = ({modal}) => {
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -59,12 +60,13 @@ const Navbar = () => {
         const scrolled = (winScroll / height) * 100;
         setScrollPercentage(scrolled);
     };
+
     return (
         <nav>
             <div className="nav-container">
                 <div className="nav-logo-container">
                     <img alt="logo.png" src="/logo.png"></img>
-                    <p>PT. Sumandingan Makmur Sentosa</p>
+                    <p>PT Sungadiman Makmur Sentosa</p>
                 </div>
                 <div className="navbar-links-container">
                     <a href="#beranda">{t('navbar1')}</a>
@@ -75,6 +77,7 @@ const Navbar = () => {
                     <a href="#partner">{t('navbar6')}</a>
                 </div>
                 <div className="nav-right">
+                    <img src="\unduh.png" className="img-unduh" onClick={modal}/>
                     <div className="language-container">
                         {i18n.language == "en" ? <div className="language-nav" onClick={handleShowDropdown}>
                             <img alt="sungadiman-en.png" className="language-container-img" src="/en.png"></img>

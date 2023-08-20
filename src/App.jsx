@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css'
@@ -10,15 +10,27 @@ import Partner from "./Components/Partner";
 import Footer from "./Components/Footer";
 import NilaiPerusahaan from "./Components/NilaiPerusahaan/NilaiPerusahaan";
 import Penghargaan from "./Components/Penghargaan/Penghargaan";
+import ModalGoogleForm from "./Components/GoogleForm/ModalGoogleForm";
 
 function App() {
   useEffect(() => {
-    AOS.init({once: true});
-    AOS.refresh();
-}, []);
+      AOS.init({once: true});
+      AOS.refresh();
+  }, []);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+      setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+      setIsModalOpen(false);
+  };
   return (
     <div className='App'>
-      <Navbar/>
+      <Navbar modal={openModal}/>
+      <ModalGoogleForm isOpen={isModalOpen} onClose={closeModal}/>
       <Beranda/>
       <Sejarah/>
       <MisiVisi/>
