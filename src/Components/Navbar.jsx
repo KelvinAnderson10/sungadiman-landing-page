@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-import ModalGoogleForm from "./GoogleForm/ModalGoogleForm";
 
 const Navbar = ({modal}) => {
     useEffect(() => {
