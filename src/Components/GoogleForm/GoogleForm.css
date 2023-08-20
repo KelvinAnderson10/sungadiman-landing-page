@@ -51,6 +51,7 @@
         overflow: hidden;
         padding-bottom: 56.25%;
         max-width: 100%;
+        height: 30em;
     }
   
     .google-form-container iframe {
