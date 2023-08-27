@@ -151,7 +151,7 @@ const ModalLogo = ({type}) => {
         {
             name: 'Dinas Kesehatan Kab. Pacitan',
             link: 'http://dinkes.pacitankab.go.id/',
-            logo: 'http://36.95.68.77/hal_induk/icon/logo_kab.png'
+            logo: 'https://pacitankab.go.id/wp-content/uploads/lambang-pacitan.png'
         },
         {
             name: 'Dinas Pemuda dan Olahraga Kab. Sragen',
@@ -244,7 +244,7 @@ const ModalLogo = ({type}) => {
     ]
 
     const openPdf = () => {
-        const pdfUrl = 'https://drive.google.com/file/d/1t5bS9bryNoFKPq7Zgu7KTICTafbEADc1/view';
+        const pdfUrl = 'https://drive.google.com/file/d/1h2zEHdgHOdGjdK9-L7Ojlpu7mNoHpBKv/view';
         window.open(pdfUrl, '_blank');
     };
 
