@@ -928,3 +928,11 @@ nav {
   width: 2em;
   cursor: pointer;
 }
+
+.achieve {
+  transition: filter 0.3s;
+}
+
+.achieve:hover {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}

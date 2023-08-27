@@ -1,0 +1,59 @@
+.modal-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 6.5vw;
+    height: auto;
+    text-overflow:clip;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .logo-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vw;
+        width: 15vw;
+        height: auto;
+        text-overflow:clip;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    width: 5vw;
+    height: auto;
+    margin: 10px;
+}
+
+.text-modal{
+    text-align: center;
+    font-size: 12px;
+}
+
+.text-next{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffff;
+    border: solid 1px;
+    border-color: rgba(138, 141, 147, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    color:rgba(138, 141, 147, 1);
+    width: 8em;
+    align-self: flex-end;
+}
+
+.rs_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
