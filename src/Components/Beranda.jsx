@@ -1,5 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import ModalComponent from "./ModalComponent/ModalComponent";
+import { useState } from "react";
+import ModalLogo from "./ModalLogo/ModalLogo";
 
 const Beranda = () => {
     const moveToBottom = () => {
@@ -7,6 +10,33 @@ const Beranda = () => {
         window.scrollTo(0, screenHeight - (screenHeight * 0.09));
     }
     const { t, i18n } = useTranslation();
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [type, setType] = useState('dinkes')
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const openPdf = () => {
+        const pdfUrl = 'https://drive.google.com/file/d/1db1PDru8f8QEOYonQbW4Bb87-QMZUngh/view';
+        window.open(pdfUrl, '_blank');
+    };
+
+    const dinkesOpen = () => {
+        setType('dinkes')
+        openModal();
+    }
+
+    const rSOpen = () => {
+        setType('rs')
+        openModal();
+    }
+
     return (
         <section id="beranda" className="beranda">
             <div className="beranda-section">
@@ -48,15 +78,15 @@ const Beranda = () => {
                 </div>
                 <div className="beranda-info-right">
                     <div className="beranda-info-right-container">
-                        <div data-aos="zoom-in" data-aos-duration="1000" className="info-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <div data-aos="zoom-in" data-aos-duration="1000" className="info-container" onClick={dinkesOpen} style={{cursor: "pointer"}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" className="achieve">
                                 <circle cx="25" cy="25" r="25" fill="#FFB400" />
                             </svg>
                             <p className="info-number">25++</p>
                             <p className="info-text">{t('beranda1')}</p>
                         </div>
-                        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="info-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className="info-container" onClick={rSOpen} style={{cursor: "pointer"}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" className="achieve">
                             <circle cx="25" cy="25" r="25" fill="#16B1FF"/>
                             </svg>
                             <p className="info-number">150++</p>
@@ -64,8 +94,8 @@ const Beranda = () => {
                         </div>
                     </div>
                     <div className="beranda-info-right-container">
-                        <div  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600"  className="info-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                        <div  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600"  className="info-container" onClick={openPdf} style={{cursor: "pointer"}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none" className="achieve">
                             <circle cx="25" cy="25" r="25" fill="#56CA00"/>
                             </svg>
                             <p className="info-number">370++</p>
@@ -81,6 +111,7 @@ const Beranda = () => {
                     </div>
                 </div>
             </div>
+            <ModalComponent isOpen={isModalOpen} content={<ModalLogo type={type}/>} onClose={closeModal}/>
         </section>
     );
 };
