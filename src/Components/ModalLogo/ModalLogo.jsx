@@ -192,54 +192,54 @@ const ModalLogo = ({type}) => {
 
     const rumahSakit = [
         {
-            name: "Dinas Kesehatan Kab. Bantul",
-            link: "https://dinkes.bantulkab.go.id/",
-            logo: "https://dinkes.bantulkab.go.id/storage/dinkes/partner/yNJ1gx5YCzqXUbwlJZDcdNWz7WNeNE6eNS1Un8b9.png"
+            name: "Rumah Sakit Dr Oen Surakarta",
+            link: "https://www.droenska.com/",
+            logo: "https://www.droenska.com/templates/corporate_response/images/s5_lg.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Blora",
-            link: "https://dinkes.blorakab.go.id/",
-            logo: "https://www.blorakab.go.id/resource/doc/page/200907163835blora.png"
+            name: "Rumah Sakit Umum Daerah Dr Moewardi",
+            link: "https://rsmoewardi.com/",
+            logo: "https://rsmoewardi.com/wp-content/uploads/2020/10/logo.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Boyolali",
-            link: "https://dinkes.boyolali.go.id/",
-            logo: "https://dinkes.boyolali.go.id/img/logo.png"
+            name: "Rumah Sakit Umum Islam Kustati",
+            link: "http://rskustatisolo.com/",
+            logo: "http://rskustatisolo.com/wp-content/uploads/2022/06/35-2048x389.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Demak",
-            link: "https://dinkes.demakkab.go.id/",
-            logo: "https://dinkes.demakkab.go.id/wp-content/uploads/2017/09/logo-kabupaten-demak.svg.png"
+            name: "Rumah Sakit Universitas Sebelas Maret",
+            link: "https://rs.uns.ac.id/",
+            logo: "https://i0.wp.com/rs.uns.ac.id/wp-content/uploads/2020/03/cropped-LOGO3cSNARS-1.png?w=793&ssl=1"
         },
         {
-            name: "Dinas Kesehatan Kab. Grobogan",
-            link: "https://www.dinkes.grobogan.go.id/",
-            logo: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Lambang_Grobogan.png"
+            name: "Rumah Sakit Jiwa Daerah Surakarta",
+            link: "https://rsjd-surakarta.jatengprov.go.id/",
+            logo: "https://rsjd-surakarta.jatengprov.go.id/wp-content/uploads/2023/07/cropped-banner-web-utama.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Gunung Kidul",
-            link: "https://dinkes.gunungkidulkab.go.id/",
-            logo: "https://dinkes.gunungkidulkab.go.id/wp-content/uploads/2021/05/Lambang_Kabupaten_Gunungkidul-e1623220943204.png"
+            name: "Rumah Sakit Paru Dr. Ario Wirawan",
+            link: "https://rspaw.or.id/#/",
+            logo: "https://rspaw.or.id/images/logo.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Boyolali",
-            link: "https://dinkes.boyolali.go.id/",
-            logo: "https://dinkes.boyolali.go.id/img/logo.png"
+            name: "Rumah Sakit Umum Pusat Dr. Soeradji Tirtonegoro",
+            link: "https://rsupsoeradji.id/",
+            logo: "https://rsupsoeradji.id/wp-content/uploads/2017/04/logo-rsst3.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Demak",
-            link: "https://dinkes.demakkab.go.id/",
-            logo: "https://dinkes.demakkab.go.id/wp-content/uploads/2017/09/logo-kabupaten-demak.svg.png"
+            name: "Rumah Sakit Jiwa Prof. Dr. Soeroyo",
+            link: "https://soerojohospital.co.id/",
+            logo: "https://soerojohospital.co.id/img/logo/soerojoHopita4.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Grobogan",
-            link: "https://www.dinkes.grobogan.go.id/",
-            logo: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Lambang_Grobogan.png"
+            name: "Rumah Sakit Jiwa Daerah Dr Amino Gondohutomo",
+            link: "https://rs-amino.jatengprov.go.id/",
+            logo: "https://rs-amino.jatengprov.go.id/wp-content/uploads/2019/09/logoNew2019.png"
         },
         {
-            name: "Dinas Kesehatan Kab. Gunung Kidul",
-            link: "https://dinkes.gunungkidulkab.go.id/",
-            logo: "https://dinkes.gunungkidulkab.go.id/wp-content/uploads/2021/05/Lambang_Kabupaten_Gunungkidul-e1623220943204.png"
+            name: "Rumah Sakit Orthopedi Prof. Dr. R. Soeharso",
+            link: "https://pendaftaran.rso.go.id/",
+            logo: "https://pendaftaran.rso.go.id/assets/images/logo.png"
         },
     ]
 
@@ -264,7 +264,7 @@ const ModalLogo = ({type}) => {
                                 src={data.logo}
                             />
                         </a>
-                        <p className='text-modal'>{data.name}</p>
+                        <a className='text-modal' href={data.link} rel="noopener noreferrer" target="_blank">{data.name}</a>
                     </div>
                 ))}
                 </div>:
@@ -274,6 +274,7 @@ const ModalLogo = ({type}) => {
                             {rumahSakit.map((data) => (
                                 <div className='logo-item'>
                                     <a
+                                    className="logo-container"
                                     key={data.name}
                                     href={data.link}
                                     target="_blank"
@@ -283,7 +284,7 @@ const ModalLogo = ({type}) => {
                                             src={data.logo}
                                         />
                                     </a>
-                                    <p className='text-modal'>{data.name}</p>
+                                    <a className='text-modal' href={data.link} rel="noopener noreferrer" target="_blank">{data.name}</a>
                                 </div>
                             ))}
                         </div>

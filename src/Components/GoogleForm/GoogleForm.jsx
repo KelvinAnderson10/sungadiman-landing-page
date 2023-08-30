@@ -5,7 +5,7 @@ const GoogleFormEmbed = () => {
   return (
     <div className='google-form-container'>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSevLtG3OrqTkVfd5XB8OZyJ_kEzU9COglRLuZqhDyyRYSPMsA/viewform?usp=sf_link"
+        src="https://forms.gle/EoszpuCVXruBc5DAA"
         width="640"
         height="480"
         frameborder="0"

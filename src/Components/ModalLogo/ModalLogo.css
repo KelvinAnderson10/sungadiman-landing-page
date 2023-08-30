@@ -34,6 +34,14 @@
     margin: 10px;
 }
 
+.logo-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
 .text-modal{
     text-align: center;
     font-size: 12px;
