@@ -17,6 +17,8 @@ const Partner = () => {
         { alt: "sungadiman-usm-logo.svg", link: "https://usmberkahindonesia.com/", src: "/usm-logo.svg" },
         { alt: "sungadiman-swayasa-logo.svg", link: "https://www.swayasaprakarsa.com/", src: "/swayasa-logo.svg" },
         { alt: "sungadiman-anugrah-logo.svg", link: "http://www.anugrah-yaden.com/in/main.php", src: "/anugrah-logo.svg" },       
+        { alt: "sungadiman-samudra-logo.svg", src: "/samudra-logo.png" },       
+        { alt: "sungadiman-nuritek-logo.svg", link: "http://nuritek.com", src: "/nuritek-logo.png" },       
       ];
 
     return (
